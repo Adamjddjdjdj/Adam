@@ -1,101 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Créer un site e-commerce</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-</head>
-<body>
-  <!-- Barre de navigation -->
-  <nav>
-    <h1>Miaou</h1>
-    <div class="onglets">
-      <p class="link">Nouveautés</p>
-      <p class="link">Homme</p>
-      <p class="link">Femme</p>
-      <p class="link">Adam</p>
-      <p class="link">Cadeaux</p>
-      <form>
-        <input type="search" placeholder="Rechercher">
-      </form>
+<html lang="fr">
+<head><!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NatureEmoi - Ventes de plantes en ligne</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  </head>
+  <body>
+      <section class="top-page">
+          <header class="header">
+              <img src="images/logo.png" alt="Logo du site">
+              <nav class="nav">
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="#bests-items">Nos meilleurs ventes</a></li>
+                  <li><a href="#all-plants">Nos plantes</a></li>
+              </nav>
+          </header>
+          <div class="landing-page">
+              <h1 class="big-title">Nature Emoi, meilleur que le chocolat.</h1>
+              <a class="scroll-down" href="#services">Scroll <i class="fas fa-angle-down"></i></a>
+          </div>
+          
+      </section>
       
-      <p><i class="fas fa-heart"></i></p>
-      <p><i class="fas fa-shopping-cart"></i></p>
-    </div>
-  </nav>
-  <!-- Fin de la barre de navigation -->
-  
-  <!-- Header -->
-   <header>
-     <h1>.</h1>
-     <button>Naviguer<i class="fas fa-paper-plane"></i></button>
-   </header>
-  <!-- Fin du header -->
-  
-  <!-- Section principale -->
-  <section class="main">
-    
-    <!-- Toutes les cartes -->
-    
-    <div class="cards">
+      <section class="services" id="services">
+          <div class="service-item">
+              <i class="fas fa-store delivery-icon"></i>
+              <p class="service-details">Nos magasins à votre service</p>
+          </div>
+          <div class="service-item">
+              <i class="fas fa-people-carry delivery-icon"></i>
+              <p class="service-details">Retrait en magasin sans contact</p>
+          </div>
+          <div class="service-item">
+              <i class="fas fa-truck delivery-icon"></i>
+              <p class="service-details">Livraison à domicile sans contact</p>
+          </div>
+      </section> 
+      <section class="bests-items" id="bests-items">
+          <h2 class="section-title">
+              Nos meilleures ventes
+          </h2>
+          <div class="best-plants">
+              <a class="plant-box plant1 no-grid">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">24,99€</p>
+                  </div>
+              </a>
+              <a class="plant-box plant2 no-grid">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">14,99€</p>
+                  </div>
+              </a>
+              <a class="plant-box plant3 no-grid">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">24,99€</p>
+                  </div>
+              </a>
+              <a class="plant-box plant4 no-grid">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">29,99€</p>
+                  </div>
+              </a>
+          </div>
+      </section> 
+      <section class="all-plants" id="all-plants">
+          <h2 class="section-title">
+              Nos plantes
+          </h2>
+          <div class="plant-grid">
+              <a class="plant-grid1 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">17,99€</p>
+                  </div>
+              </a>
+              <a class="plant-grid2 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">9,99€</p>
+                  </div>
+              </a>
+              <a class="plant-grid3 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">44,99€</p>
+                  </div>
+              </a>
+              <a class="plant-grid4 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">39,99€</p>
+                  </div>
+              </a>
+              <a class="plant-grid5 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">17,99€</p>
+                  </div>
+              </a>
+              <a class="plant-grid6 plant-box">
+                  <div class="plant-details">
+                      <p class="plant-name">Plante</p>
+                      <p class="plant-price">24,99€</p>
+                  </div>
+              </a>
+          </div>
+      </section> 
       
-      <div class="card">
-        <img src="comment-faire-tarte-citron-meringuee-facile.webp">
-        <div class="card-header">
-          <h3 class="title">Tarte au citron meringuée</h3>
-          <h3 class="price">199$</h3>
-        </div>
-        <div class="card-body">
-          <p>Tarte au citron meringuée</p>
-        </div>
-      </div>
-      
-      <div class="card">
-        <img src="detail-aiglefin-espece-poisson-96.png">
-        <div class="card-header">
-          <h3 class="title">Le Poisson</h3>
-          <h4 class="price">69$</h4>
-        </div>
-        <div class="card-body">
-          <p>Poisson au citron</p>
-        </div>
-      </div>
-      
-      <div class="card">
-        <img src="fantome-halloween-meringue-1200.jpg">
-        <div class="card-header">
-          <h3 class="title">Meringue fantôme</h3>
-          <h3 class="price">39$</h3>
-        </div>
-        <div class="card-body">
-          <p>Meringue fantôme</p>
-        </div>
-      </div>
-      
-     </div>
-    <!-- Fin de toutes les cartes -->
-    
-    <!-- Video de presentation -->
-    <div class="video">
-      <iframe src="//www.youtube.com/embed/6QSUTjsHU6s?si=9j8ul8VhwSx8Ti-i" 
-      allowfullscreen></iframe>
-    </div>
-    <!-- Fin de la video de presentation -->
-  </section>
-  <!-- Fin de la section principale -->
-  
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; Contactez-nous au 01 01 01 01 01</p>
-    <div class="social-media">
-      <p><i class="fab fa-facebook-tf"></i></p>
-      <p><i class="fab fa-twitter"></i></p>
-      <p><i class="fab fa-instagram"></i></p>
-      <p><i class="fab fa-linkedin-in"></i></p>
-    </div>
-  </footer>
-  <!-- Fin du pied de page -->
-</body>
-</html>
+      <footer>
+          <p class="copyright">&copy; 2020 - Nature Emoi</p>
+          <a href="" class="cgv">Conditions générales de ventes</a>
+      </footer>
+  </body>
+  </html>
